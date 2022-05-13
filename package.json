@@ -36,10 +36,10 @@
     "vite": "^2.9.7",
     "vue-tsc": "^0.34.7"
   },
-  "lint-staged": {
-    "*.{js,ts}": [
-      "npm run eslint",
-      "npm run prettier"
+  "lint-staged": { 
+    "src/**/*.{js,ts,jsx,tsx,vue}": [
+      "prettier --write",
+      "eslint --fix"
     ]
   },
   "config": {
